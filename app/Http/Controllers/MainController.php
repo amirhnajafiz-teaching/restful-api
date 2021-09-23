@@ -23,7 +23,7 @@ class MainController extends Controller
      */
     public static function index(Request $request)
     {
-        $city = $request->input('city') ?? 'tehran';
+        $city = $request->input('city', 'tehran');
 
         $response = Http::get(route('api.channel', $city));
 

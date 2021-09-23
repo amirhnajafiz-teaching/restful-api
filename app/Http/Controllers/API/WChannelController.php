@@ -23,7 +23,19 @@ class WChannelController extends Controller
      */
     public function index(string $city = 'tehran') : array
     {
-        $response = Http::get("https://api.openweathermap.org/data/2.5/weather?q=$city&appid=8516dbc0b619c1a5b25dc01f1ce492b1");
+        $location = Http::get('https://api.openweathermap.org/geo/1.0/direct', [
+            'appid' => '8516dbc0b619c1a5b25dc01f1ce492b1',
+            'q' => $city,
+            'limit' => 1
+        ])->json()[0];
+
+        $response = Http::get('https://api.openweathermap.org/data/2.5/onecall', [
+            'appid' => '8516dbc0b619c1a5b25dc01f1ce492b1',
+            'lat' => $location['lat'],
+            'lon' => $location['lon'],
+            'units' => 'metric',
+        ]);
+
         return $response->json();
     }
 }
