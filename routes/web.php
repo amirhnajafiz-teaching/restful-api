@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Home page
 Route::get('/', function () {
     return view('welcome');
 });
 
+// Route for weather channel form
 Route::post('/channel', [\App\Http\Controllers\MainController::class, 'index'])
     ->name('channel.index');
