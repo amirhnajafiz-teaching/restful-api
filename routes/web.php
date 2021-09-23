@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/channel', [\App\Http\Controllers\MainController::class, 'index'])
+    ->name('channel.index');
