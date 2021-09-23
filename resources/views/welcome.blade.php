@@ -13,7 +13,7 @@
         <label for="city">
             Enter the city name
         </label>
-        <input type="text" id="city" />
+        <input type="text" id="city" name="city" />
         <button type="submit">
             Get weather
         </button>

@@ -14,6 +14,6 @@ class MainController extends Controller
         $response = Http::get(route('api.channel', $city));
 
         return view('weather.card')
-            ->with('response', $response['data']);
+            ->with('response', $response);
     }
 }
