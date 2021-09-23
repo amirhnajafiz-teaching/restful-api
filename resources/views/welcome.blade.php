@@ -12,23 +12,26 @@
     </title>
 </head>
 <body>
-<div>
-    <h2>
-        Hi, Welcome to Weather Channel
-    </h2>
-    <form action="{{ route('channel.index') }}" method="post">
-        @csrf
-        <label for="city">
-            Enter the city name
-        </label>
-        <input type="text" id="city" name="city"/>
-        <button type="submit">
-            Get weather
-        </button>
-    </form>
-</div>
-<div>
-    @yield('content')
-</div>
+    @if(request()->routeIs('home'))
+        <div>
+            <h2>
+                Hi, Welcome to Weather Channel
+            </h2>
+            <form action="{{ route('channel.index') }}" method="post">
+                @csrf
+                <label for="city">
+                    Enter the city name
+                </label>
+                <input type="text" id="city" name="city"/>
+                <button type="submit">
+                    Get weather
+                </button>
+            </form>
+        </div>
+    @else
+        <div>
+            @yield('content')
+        </div>
+    @endif
 </body>
 </html>

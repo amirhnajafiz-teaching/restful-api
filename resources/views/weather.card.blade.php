@@ -28,5 +28,8 @@
                 @endforeach
             </tr>
         </table>
+        <a href="{{ route('home') }}">
+            Back
+        </a>
     </div>
 @stop
