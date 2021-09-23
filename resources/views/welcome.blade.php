@@ -17,8 +17,7 @@
             <h2>
                 Hi, Welcome to Weather Channel
             </h2>
-            <form action="{{ route('channel.index') }}" method="post">
-                @csrf
+            <form action="{{ route('channel.index') }}" method="get">
                 <label for="city">
                     Enter the city name
                 </label>

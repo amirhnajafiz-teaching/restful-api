@@ -19,5 +19,5 @@ Route::get('/', function () {
 })->name('home');
 
 // Route for weather channel form
-Route::post('/channel', [\App\Http\Controllers\MainController::class, 'index'])
+Route::get('channel/{city?}', [\App\Http\Controllers\MainController::class, 'index'])
     ->name('channel.index');
