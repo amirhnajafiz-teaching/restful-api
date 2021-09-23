@@ -19,13 +19,11 @@ class WChannelController extends Controller
      * Display a listing of the resource.
      *
      * @param $city string city name
-     * @return JsonResponse
+     * @return array|mixed
      */
-    public function index(string $city): JsonResponse
+    public function index(string $city = 'tehran') : array
     {
         $response = Http::get("https://api.openweathermap.org/data/2.5/weather?q=$city&appid=8516dbc0b619c1a5b25dc01f1ce492b1");
-        return \response()->json([
-            'data' => $response
-        ]);
+        return $response->json();
     }
 }

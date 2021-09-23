@@ -11,7 +11,7 @@ class MainController extends Controller
     {
         $city = $request->input('city') ?? 'tehran';
 
-        $response = Http::get(route('channel', $city));
+        $response = Http::get(route('api.channel', $city));
 
         return view('weather.card')
             ->with('response', $response['data']);

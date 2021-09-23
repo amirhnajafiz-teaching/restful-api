@@ -18,4 +18,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('channel', \App\Http\Controllers\API\WChannelController::class);
+Route::get('channel/{city?}', [\App\Http\Controllers\API\WChannelController::class, 'index'])
+    ->name('api.channel');
