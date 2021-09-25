@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
 /**
@@ -19,7 +18,7 @@ class ChannelController extends Controller
      * @param $city string city name
      * @return array
      */
-    public function index(string $city = 'tehran') : array
+    public function __invoke(string $city = 'tehran') : array
     {
         $location = Http::get('https://api.openweathermap.org/geo/1.0/direct', [
             'appid' => '8516dbc0b619c1a5b25dc01f1ce492b1',
