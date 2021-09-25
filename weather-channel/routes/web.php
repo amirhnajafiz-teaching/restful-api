@@ -19,5 +19,5 @@ Route::get('/', [\App\Http\Controllers\MainController::class, 'index'])
     ->name('home');
 
 // Channel
-Route::get('channel', [\App\Http\Controllers\MainController::class, 'main'])
+Route::get('channel/{city?}', [\App\Http\Controllers\MainController::class, 'main'])
     ->name('channel');
