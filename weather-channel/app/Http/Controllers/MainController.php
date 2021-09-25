@@ -16,13 +16,23 @@ use Illuminate\Support\Facades\Http;
 class MainController extends Controller
 {
     /**
+     * Home page method.
+     *
+     * @return Application|Factory|View
+     */
+    public static function index(): Factory|View|Application
+    {
+        return view('welcome');
+    }
+
+    /**
      * Handling the weather request to our WC API.
      *
      * @param string $city
      * @param Request $request
      * @return Application|Factory|View
      */
-    public static function index(Request $request, string $city = 'tehran'): Factory|View|Application
+    public static function main(Request $request, string $city = 'tehran'): Factory|View|Application
     {
         $city = $request->input('city', $city);
 
