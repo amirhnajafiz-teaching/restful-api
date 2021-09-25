@@ -32,10 +32,12 @@
             Hi, Welcome to Weather Channel
         </h2>
         <form action="{{ route('channel') }}" method="get">
-            <label for="city" style="width: 100%; font-size: 1.5rem; margin-bottom: 10px;">
-                Enter the city name
-            </label>
-            <input type="text" id="city" name="city" style="width: 100%; padding: 10px; border-radius: 5px; margin-bottom: 10px;"/>
+            <h2 style="width: 100%; font-size: 1.5rem; margin-bottom: 10px;">
+                <label for="city">
+                    Enter the city name
+                </label>
+            </h2>
+            <input placeholder="City ..." type="text" id="city" name="city" style="width: 100%; padding: 10px; border-radius: 5px; margin-bottom: 10px;"/>
             <button type="submit" class="btn">
                 Get weather
             </button>

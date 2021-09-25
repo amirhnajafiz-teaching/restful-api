@@ -46,7 +46,7 @@ class MainController extends Controller
             'limit' => 1
         ])->json()[0] ?? null;
 
-        if (isNull($location)) {
+        if ($location == null) {
             abort(404);
         }
 
