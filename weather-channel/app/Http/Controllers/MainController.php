@@ -36,9 +36,20 @@ class MainController extends Controller
     {
         $city = $request->input('city', $city);
 
-        $response = Http::get(route('api.channel', $city));
+        $location = Http::get('https://api.openweathermap.org/geo/1.0/direct', [
+            'appid' => '8516dbc0b619c1a5b25dc01f1ce492b1',
+            'q' => $city,
+            'limit' => 1
+        ])->json()[0];
+
+        $response = Http::get('https://api.openweathermap.org/data/2.5/onecall', [
+            'appid' => '8516dbc0b619c1a5b25dc01f1ce492b1',
+            'lat' => $location['lat'],
+            'lon' => $location['lon'],
+            'units' => 'metric',
+        ]);
 
         return view('weather.card')
-            ->with('response', $response);
+            ->with('response', $response->json());
     }
 }
