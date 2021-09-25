@@ -33,7 +33,7 @@
                 @endforeach
             </tr>
         </table>
-        <a href="{{ route('home') }}" style="display:block; text-align: center; padding: 10px; border-radius: 5px; width: 20%; margin: 30px auto; color: white; background-color: #1a202c;">
+        <a href="{{ route('home') }}" style="display:block; text-align: center; padding: 10px; border-radius: 5px; width: 20%; margin: 30px auto; color: white; background-color: #1a202c; text-decoration: none;">
             Back
         </a>
     </div>
