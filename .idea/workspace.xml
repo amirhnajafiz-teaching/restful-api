@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92d715b0-4ed6-4d53-9181-6b2a0612b8f6" name="Default Changelist" comment="" />
+    <list default="true" id="92d715b0-4ed6-4d53-9181-6b2a0612b8f6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-channel/resources/views/weather-card.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-channel/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/weather-channel/app/Http/Controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-channel/app/Models/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-channel/database/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-channel/database/factories/UserFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-channel/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-channel/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-channel/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-channel/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-channel/database/seeders/DatabaseSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-channel/resources/views/weather.card.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-channel/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/weather-channel/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-channel/routes/channels.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-channel/tests/CreatesApplication.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-channel/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-channel/tests/TestCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-channel/tests/Unit/ExampleTest.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1632464405560</updated>
       <workItem from="1632464410976" duration="451000" />
-      <workItem from="1632551969453" duration="1465000" />
+      <workItem from="1632551969453" duration="3250000" />
     </task>
     <servers />
   </component>

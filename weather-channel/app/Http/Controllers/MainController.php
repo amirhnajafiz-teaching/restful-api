@@ -49,7 +49,8 @@ class MainController extends Controller
             'units' => 'metric',
         ]);
 
-        return view('weather.card')
-            ->with('response', $response->json());
+        return view('weather-card')
+            ->with('location', $location)
+            ->with('weather', $response->json());
     }
 }
