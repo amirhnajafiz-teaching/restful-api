@@ -7,4 +7,4 @@ import datetime
 class Device(BaseModel):
     version: float
     platform: str
-    create_time: datetime.time 
+    create_time: datetime.time | None = None

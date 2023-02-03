@@ -1,5 +1,6 @@
 import fastapi
 from fastapi import FastAPI
+import datetime
 
 from model import Device
 
@@ -20,9 +21,10 @@ def root():
 
 @app.get("/api/device")
 def get_devices():
-    pass
+    return devices
 
 
 @app.post("/api/device")
-def add_device():
-    pass
+async def add_device(device: Device):
+    device.create_time = datetime.datetime.now()
+    devices.append(device)
