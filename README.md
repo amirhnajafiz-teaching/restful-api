@@ -6,6 +6,8 @@
 
 Let's talk about what is a **Restful API** and how we can implement an standard one.
 
+<br />
+
 ## What is REST API?
 
 An API, or application programming interface, is a set of rules that define 
