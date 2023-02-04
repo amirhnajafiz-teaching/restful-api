@@ -4,11 +4,25 @@
 
 <br />
 
-Let's talk about what is a **Restful API** and how we can implement an standard one. 
+Let's talk about what is a **Restful API** and how we can implement an standard one.
+
+## What is REST API?
+
 An API, or application programming interface, is a set of rules that define 
 how applications or devices can connect to and communicate with each other. 
 A **Restful API** is an API that conforms to the design principles of the REST, 
 or representational state transfer architectural style.
+
+## Principles
+
+The six guiding principles or constraints of the Restful architecture are:
+
+- Uniform Interface
+- Client-Server
+- Stateless
+- Cacheable
+- Layered System
+- Code on Demand (Optional)
 
 ```shell
 uvicorn main:app --reload
