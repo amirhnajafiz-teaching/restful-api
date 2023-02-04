@@ -15,6 +15,14 @@ how applications or devices can connect to and communicate with each other.
 A **Restful API** is an API that conforms to the design principles of the REST, 
 or representational state transfer architectural style.
 
+<br />
+
+<p align="center">
+    <img src="./assets/rest-api-model-1.png" alt="api-model" width="500" />
+</p>
+
+<br />
+
 ## Principles
 
 The six guiding principles or constraints of the Restful architecture are:
