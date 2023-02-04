@@ -24,17 +24,36 @@ The six guiding principles or constraints of the Restful architecture are:
 - Layered System
 - Code on Demand (Optional)
 
+## Resource
+
+The key abstraction of information in REST is a resource. 
+Any information that we can name can be a resource. 
+For example, a REST resource can be a document or image, a temporal service, a
+collection of other resources, or a non-virtual object (e.g., a person).
+
+## Example
+
+Building a Restful API with python fastapi library. Enter into fastapi directory and start api server:
+
 ```shell
 uvicorn main:app --reload
 ```
+
+### Make requests using curl
+
+Check api version:
 
 ```shell
 curl -w '\n' localhost:8000/api
 ```
 
+Insert a device:
+
 ```shell
 curl -w '\n' -X POST -H "Content-Type: application/json" --data '{"version": 0.5, "platform": "IOS"}' localhost:8000/api/device
 ```
+
+Get the list of devices:
 
 ```shell
 curl -w '\n' localhost:8000/api/device
