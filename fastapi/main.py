@@ -68,6 +68,8 @@ async def update_device(id: int, device: Device):
     devices.remove(item)
 
     device.id = id
-    device.append(device)
+    devices.append(device)
+
+    devices.sort(key=lambda x: x.id, reverse=True)
 
     return "OK"
