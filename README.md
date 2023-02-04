@@ -58,3 +58,15 @@ Get the list of devices:
 ```shell
 curl -w '\n' localhost:8000/api/device
 ```
+
+Update a device:
+
+```shell
+curl -w '\n' -X PUT -H "Content-Type: application/json" --data '{"version": 0.1, "platform": "IOS"}' localhost:8000/api/device/10002
+```
+
+Delete a device:
+
+```shell
+curl -w '\n' -X DELETE localhost:8000/api/device/10002
+```
