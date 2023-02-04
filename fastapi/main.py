@@ -13,6 +13,7 @@ devices = []
 app = FastAPI()
 
 
+
 # create routes
 @app.get("/api")
 def root():
@@ -28,3 +29,5 @@ def get_devices():
 async def add_device(device: Device):
     device.create_time = datetime.datetime.now()
     devices.append(device)
+
+    return "OK"
