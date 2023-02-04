@@ -55,7 +55,7 @@ async def remove_device(id: int):
 
     return "OK"
 
-@app.put("/api/device")
+@app.put("/api/device/{id}")
 async def update_device(id: int, device: Device):
     item = None
 
