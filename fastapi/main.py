@@ -52,3 +52,22 @@ async def remove_device(id: int):
     devices.remove(item)
 
     return "OK"
+
+@app.put("/api/device")
+async def update_device(id: int, device: Device):
+    item = None
+
+    for device in devices:
+        if device.id == id:
+            item = device
+            break
+
+    if item == None:
+        return "Not found"
+    
+    devices.remove(item)
+
+    device.id = id
+    device.append(device)
+
+    return "OK"
