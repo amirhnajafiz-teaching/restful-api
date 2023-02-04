@@ -16,16 +16,25 @@ app = FastAPI()
 
 
 # create routes
+"""
+return the fastapi version.
+"""
 @app.get("/api")
 def root():
     return {"Version": fastapi.__version__}
 
 
+"""
+return the list of devices.
+"""
 @app.get("/api/device")
 def get_devices():
     return devices
 
 
+"""
+add a new device to devices.
+"""
 @app.post("/api/device")
 async def add_device(device: Device):
     global base_id
@@ -39,6 +48,10 @@ async def add_device(device: Device):
 
     return "OK"
 
+
+"""
+remove a device from devices.
+"""
 @app.delete("/api/device/{id}")
 async def remove_device(id: int):
     item = None
@@ -55,6 +68,10 @@ async def remove_device(id: int):
 
     return "OK"
 
+
+"""
+update a device.
+"""
 @app.put("/api/device/{id}")
 async def update_device(id: int, device: Device):
     item = None
