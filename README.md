@@ -4,6 +4,12 @@
 
 <br />
 
+Let's talk about what is a **Restful API** and how we can implement an standard one. 
+An API, or application programming interface, is a set of rules that define 
+how applications or devices can connect to and communicate with each other. 
+A **Restful API** is an API that conforms to the design principles of the REST, 
+or representational state transfer architectural style.
+
 ```shell
 uvicorn main:app --reload
 ```
