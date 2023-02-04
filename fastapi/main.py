@@ -40,12 +40,14 @@ add a new device to devices.
 """
 @app.post("/api/device")
 async def add_device(device: Device):
-    global base_id
+    global base_id, redis_connection
 
     device.id = base_id
     device.create_time = datetime.datetime.now()
 
     devices.append(device)
+
+    redis_connection.set(str(base_id), "online")
 
     base_id = base_id + 1
 
@@ -68,6 +70,8 @@ async def remove_device(id: int):
         return "Not found"
     
     devices.remove(item)
+
+    redis_connection.set(str(id), "offline")
 
     return "OK"
 
