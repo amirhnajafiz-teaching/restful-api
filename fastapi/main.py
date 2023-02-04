@@ -39,7 +39,7 @@ async def add_device(device: Device):
 
     return "OK"
 
-@app.delete("/api/device")
+@app.delete("/api/device/{id}")
 async def remove_device(id: int):
     item = None
 
