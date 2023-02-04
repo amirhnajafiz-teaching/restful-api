@@ -9,17 +9,13 @@ from model import Device
 
 # create list of devices
 devices = []
+base_id = 10001
 
 # create an app instance
 app = FastAPI()
 
 # open redis connection
 redis_connection = connect()
-
-# setting base id
-base_id = redis_connection.get('base')
-if base_id == None:
-    base_id = 10001
 
 
 # create routes
@@ -36,9 +32,7 @@ return the list of device ids.
 """
 @app.get("/api/device")
 def get_devices():
-    keys = redis_connection.get('keys')
-
-    return [int(key) for key in str(keys).split('/')]
+    return devices
 
 
 """
