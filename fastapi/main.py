@@ -8,6 +8,7 @@ from model import Device
 
 # create list of devices
 devices = []
+base_id = 10001
 
 # create an instance
 app = FastAPI()
