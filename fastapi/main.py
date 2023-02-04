@@ -2,6 +2,7 @@ import fastapi
 from fastapi import FastAPI
 import datetime
 
+from db import connect
 from model import Device
 
 
@@ -10,9 +11,11 @@ from model import Device
 devices = []
 base_id = 10001
 
-# create an instance
+# create an app instance
 app = FastAPI()
 
+# open redis connection
+redis_connection = connect()
 
 
 # create routes
