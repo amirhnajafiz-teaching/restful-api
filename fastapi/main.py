@@ -28,6 +28,8 @@ def get_devices():
 
 @app.post("/api/device")
 async def add_device(device: Device):
+    global base_id
+
     device.id = base_id
     device.create_time = datetime.datetime.now()
 
