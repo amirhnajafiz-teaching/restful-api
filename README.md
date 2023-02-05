@@ -12,7 +12,11 @@
 
 <br />
 
-Let's talk about what is a **Restful API** and how we can implement an standard one.
+Today you may hear about restful api alot. But do you know what is a rest api?
+How can you implement a rest api? what are the rules
+of creating one?
+In this repository we are going to talk about restful api
+and its principles.
 
 <br />
 
