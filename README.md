@@ -23,6 +23,24 @@ or representational state transfer architectural style.
 
 <br />
 
+## Is REST API always HTTP?
+
+REST APIs add no new capability to HTTP APIs.
+But it is an architectural style that was created in tandem with HTTP and
+most typically employs HTTP as its application layer protocol.
+However, REST isn't always linked to HTTP.
+You can use other transfer protocols, such as FTP, SMTP, etc.
+
+<br />
+
+## Is REST API always JSON?
+
+The REST architecture allows API providers to deliver
+data in multiple formats such as plain text,
+HTML, XML, YAML, and JSON, which is one of its most loved features.
+
+<br />
+
 ## Principles
 
 The six guiding principles or constraints of the Restful architecture are:
@@ -34,12 +52,21 @@ The six guiding principles or constraints of the Restful architecture are:
 - Layered System
 - Code on Demand (Optional)
 
+<br />
+
 ## Resource
+
+REST stands for Representational State Transfer.
+This means that when a client requests a resource using
+a REST API, the server transfers back the current state
+of the resource in a standardized representation.
 
 The key abstraction of information in REST is a resource.
 Any information that we can name can be a resource.
 For example, a REST resource can be a document or image, a temporal service, a
 collection of other resources, or a non-virtual object (e.g., a person).
+
+<br />
 
 ## Example
 
