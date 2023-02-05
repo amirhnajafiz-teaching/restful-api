@@ -10,9 +10,9 @@ Let's talk about what is a **Restful API** and how we can implement an standard 
 
 ## What is REST API?
 
-An API, or application programming interface, is a set of rules that define 
-how applications or devices can connect to and communicate with each other. 
-A **Restful API** is an API that conforms to the design principles of the REST, 
+An API, or application programming interface, is a set of rules that define
+how applications or devices can connect to and communicate with each other.
+A **Restful API** is an API that conforms to the design principles of the REST,
 or representational state transfer architectural style.
 
 <br />
@@ -36,8 +36,8 @@ The six guiding principles or constraints of the Restful architecture are:
 
 ## Resource
 
-The key abstraction of information in REST is a resource. 
-Any information that we can name can be a resource. 
+The key abstraction of information in REST is a resource.
+Any information that we can name can be a resource.
 For example, a REST resource can be a document or image, a temporal service, a
 collection of other resources, or a non-virtual object (e.g., a person).
 
