@@ -2,7 +2,6 @@ import fastapi
 from fastapi import FastAPI
 import datetime
 
-from db import connect
 from model import Device
 
 
@@ -13,9 +12,6 @@ base_id = 10001
 
 # create an app instance
 app = FastAPI()
-
-# open redis connection
-redis_connection = connect()
 
 
 # create routes
@@ -47,8 +43,6 @@ async def add_device(device: Device):
 
     devices.append(device)
 
-    redis_connection.set(str(base_id), "online")
-
     base_id = base_id + 1
 
     return "OK"
@@ -70,8 +64,6 @@ async def remove_device(id: int):
         return "Not found"
     
     devices.remove(item)
-
-    redis_connection.set(str(id), "offline")
 
     return "OK"
 
