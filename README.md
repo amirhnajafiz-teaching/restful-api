@@ -2,6 +2,14 @@
     Restful API
 </h1>
 
+<div align="center">
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+![GitHub](https://img.shields.io/badge/v0.1.1-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
+
 <br />
 
 Let's talk about what is a **Restful API** and how we can implement an standard one.
