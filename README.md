@@ -107,3 +107,12 @@ Delete a device:
 ```shell
 curl -w '\n' -X DELETE localhost:8000/api/device/10002
 ```
+
+<br />
+
+## Resources
+
+- [https://blog.hubspot.com/what-is-rest-api](https://blog.hubspot.com/website/what-is-rest-api#:~:text=REST%20stands%20for%20Representational%20State,resource%20in%20a%20standardized%20representation.)
+- [https://cloudacademy.com/course/what-is-an-api](https://cloudacademy.com/course/what-is-an-api-how-do-they-work-1932/the-difference-between-http-and-rest/#:~:text=HTTP%20is%20a%20communication%20protocol,or%20constraints%20placed%20upon%20it.)
+- [https://raygun.com/blog/soap-vs-rest-vs-json](https://raygun.com/blog/soap-vs-rest-vs-json/#:~:text=The%20REST%20architecture%20allows%20API,of%20its%20most%20loved%20features.)
+- [https://fastapi.com](https://fastapi.tiangolo.com/)
