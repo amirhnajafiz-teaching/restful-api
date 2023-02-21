@@ -86,7 +86,7 @@ description: update a device
 return: "OK"
 """
 @app.put("/api/device/{id}")
-async def update_device(id: int, device: Device):
+async def update_device(id: int, new_device: Device):
     item = None
 
     for device in devices:
@@ -99,8 +99,8 @@ async def update_device(id: int, device: Device):
     
     devices.remove(item)
 
-    device.id = id
-    devices.append(device)
+    new_device.id = id
+    devices.append(new_device)
 
     devices.sort(key=lambda x: x.id)
 
